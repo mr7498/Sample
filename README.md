@@ -11,52 +11,27 @@ Make sure you have the following libraries installed:
 - re
 - nltk
 
+This code contains functions for validating user prompts, extracting model type codes, identifying indices, evaluating boolean expressions, extracting dates, and generating a request body based on the user's input.
+
 ## Steps
 
-### Step 1: Importing necessary libraries
-
-The required libraries are imported at the beginning of the code to enable their usage throughout the program.
-
-### Step 2: Validating user prompts
-
-There are functions implemented to validate user prompts based on different conditions. These functions ensure the correctness of the input data.
-
-### Step 3: Extracting model type code
-
-This step includes a function that extracts the model type code from the input data.
-
-### Step 4: Identifying first and last index
-
-A function is implemented to identify the first and last index of a given text.
-
-### Step 5: Evaluating boolean expressions
-
-A function is provided to evaluate a boolean expression and convert it into a standardized format.
-
-### Step 6: Declaring a dictionary for respective keys
-
-A dictionary is declared to store respective keys for the final boolean expression.
-
-### Step 7: Generating the final boolean expression
-
-A function is implemented to generate the final boolean expression using the previously defined functions.
-
-### Step 8: Extracting date in YYYY-MM-DD format
-
-A function is available to extract the year, month, and day from the text and return it in the YYYY-MM-DD format.
-
-### Step 9: Generating the final request body
-
-This step involves calling all the functions mentioned above to generate the final request body.
-
-### Step 10: Testing the code
-
-The code prompts the user to enter the number of prompts they want to insert. Then, it asks for the input text and provides the respective output for each prompt.
+1. Importing necessary libraries.
+2. Function `validate_prompt(prompt)` to validate the user prompt on several conditions.
+3. Function `extract_model_type_code(text)` to extract the model type code from the input text.
+4. Function `get_first_last_idx(array, key)` to identify the first and last index of a given key in an array.
+5. Function `eval_bool_exp(expression)` to evaluate a boolean expression and convert it into a standardized format.
+6. Declaration of a dictionary for respective keys.
+7. Function `generateBooleanExpression(input_text)` to generate the final boolean expression.
+8. Function `extract_dates(prompt)` to extract year, month, and day from the input prompt and return it in the format "YYYY-MM-DD".
+9. Function `build_request_body(prompt)` to generate the final request body by calling the necessary functions.
+10. Collect the number of prompts from the user and the prompts themselves, and process each input prompt.
 
 ## Usage
 
-To use this code, follow these steps:
+1. Ensure that the required libraries are installed (such as nltk).
+2. Import the code file into your project or environment.
+3. Use the provided functions based on your requirements.
+4. Call the `build_request_body(prompt)` function to generate the request body for a given prompt.
+5. Provide a valid prompt and follow the instructions to get the desired output.
 
-1. Install the required libraries mentioned in the prerequisites section.
-2. Run the code and provide the necessary input when prompted.
-3. Review the output generated for each prompt.
+Please note that this code assumes the availability of necessary libraries and their correct installation. Make sure to review and customize the code as per your specific needs.
